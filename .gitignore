@@ -1,0 +1,16 @@
+# Compiler files
+cache/
+out/
+
+# Broadcast logs
+broadcast/
+
+# Docs
+docs/
+
+# Dotenv files other than .env.example
+.env*
+!.env.example
+
+# JetBrains IDEs
+.idea/
