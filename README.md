@@ -1,9 +1,9 @@
-# EVMAuth Smart Contract
+# EVMAuth Core
 
 ![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2Fevmauth%2Fevmauth-core%2Fblob%2Fmain%2Ffoundry.toml&query=%24.solc&prefix=v&label=Solidity)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/evmauth/evmauth-core/test.yml?label=Tests)
 
-**EVMAuth** is an advanced implementation of the [ERC-1155] token standard that enables robust EVM-based authorization.
+**EVMAuth** is an advanced implementation of the [ERC-1155] token standard that enables robust EVM-based authorization for Web3 applications.
 
 - **Drastically Reduced Infrastructure:** Eliminate the need for complex auth systems, user databases, and billing infrastructure, removing entire categories of technical debt from your codebase
 - **AI-Ready Architecture:** Make your API instantly accessible to AI agents that cannot navigate traditional registration flows, opening your service to the next wave of digital economy growth
