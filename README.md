@@ -1,6 +1,5 @@
 # EVMAuth Core
 
-![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2Fevmauth%2Fevmauth-core%2Fblob%2Fmain%2Ffoundry.toml&query=%24.solc&prefix=v&label=Solidity)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/evmauth/evmauth-core/test.yml?label=Tests)
 
 **EVMAuth** is an advanced implementation of the [ERC-1155] token standard that enables robust EVM-based authorization for Web3 applications.
@@ -65,6 +64,14 @@
    ```sh
    forge test --match-contract EVMAuthTest -vvv
    ```
+
+## SDKs & Libraries
+
+EVMAuth provides the following SDKs and libraries for easy integration with applications and frameworks:
+
+- [TypeScript SDK](https://github.com/evmauth/evmauth-ts)
+
+To request additional SDKs or libraries, create a new issue with `question` label.
 
 ## Core Architecture
 
