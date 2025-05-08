@@ -1,6 +1,7 @@
 # EVMAuth Core
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/evmauth/evmauth-core/test.yml?label=Tests)
+![GitHub Org's stars](https://img.shields.io/github/stars/evmauth)
 
 **EVMAuth** is an advanced implementation of the [ERC-1155] token standard that enables robust EVM-based authorization for Web3 applications.
 
@@ -71,7 +72,7 @@ EVMAuth provides the following SDKs and libraries for easy integration with appl
 
 - [TypeScript SDK](https://github.com/evmauth/evmauth-ts)
 
-To request additional SDKs or libraries, create a new issue with `question` label.
+To request additional SDKs or libraries, create a new issue with the `question` label.
 
 ## Core Architecture
 
