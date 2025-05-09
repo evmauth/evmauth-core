@@ -1,7 +1,7 @@
 # EVMAuth Core
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/evmauth/evmauth-core/test.yml?label=Tests)
-![GitHub Org's stars](https://img.shields.io/github/stars/evmauth)
+![GitHub Repo stars](https://img.shields.io/github/stars/evmauth/evmauth-core)
 
 An advanced implementation of the [ERC-1155] token standard that enables robust EVM-based authorization.
 
@@ -115,7 +115,8 @@ cast send --rpc-url "$RPC_URL" \
   "$ACCOUNT_ADDRESS" \
   "$TOKEN_ID" \
   "$TOKEN_AMOUNT" \
-  --value "$PAYMENT_AMOUNT"
+  --value "$PAYMENT_AMOUNT" \
+  --gas-limit 150000
 ```
 
 3. Check balance:
