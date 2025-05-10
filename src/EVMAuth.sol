@@ -49,7 +49,7 @@ contract EVMAuth is EVMAuthExpiringERC1155 {
 
         // Combine all metadata into a single structure
         TokenMetadata memory metadata = TokenMetadata({
-            id: id,
+            id: baseMetadata.id,
             active: baseMetadata.active,
             burnable: baseMetadata.burnable,
             transferable: baseMetadata.transferable,
@@ -71,7 +71,7 @@ contract EVMAuth is EVMAuthExpiringERC1155 {
         // Combine all metadata into a single structure
         for (uint256 i = 0; i < nextTokenId; i++) {
             result[i] = TokenMetadata({
-                id: i,
+                id: baseMetadataArray[i].id,
                 active: baseMetadataArray[i].active,
                 burnable: baseMetadataArray[i].burnable,
                 transferable: baseMetadataArray[i].transferable,
@@ -99,7 +99,7 @@ contract EVMAuth is EVMAuthExpiringERC1155 {
         // Combine all metadata into a single structure
         for (uint256 i = 0; i < ids.length; i++) {
             result[i] = TokenMetadata({
-                id: ids[i],
+                id: baseMetadataArray[i].id,
                 active: baseMetadataArray[i].active,
                 burnable: baseMetadataArray[i].burnable,
                 transferable: baseMetadataArray[i].transferable,
