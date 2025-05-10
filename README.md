@@ -95,7 +95,7 @@ cast send --rpc-url "$RPC_URL" \
 ```sh
 cast call --rpc-url "$RPC_URL" \
   "$CONTRACT_ADDRESS" \
-  "metadataOf(uint256)(bool,bool,bool,uint256,uint256)" \
+  "metadataOf(uint256)(uint256,bool,bool,bool,uint256,uint256)" \
   "$TOKEN_ID"
 ```
 

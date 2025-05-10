@@ -10,6 +10,7 @@ import "./base/EVMAuthExpiringERC1155.sol";
 contract EVMAuth is EVMAuthExpiringERC1155 {
     // Data structure for token metadata, including price and TTL
     struct TokenMetadata {
+        uint256 id;
         bool active;
         bool burnable;
         bool transferable;
@@ -48,6 +49,7 @@ contract EVMAuth is EVMAuthExpiringERC1155 {
 
         // Combine all metadata into a single structure
         TokenMetadata memory metadata = TokenMetadata({
+            id: baseMetadata.id,
             active: baseMetadata.active,
             burnable: baseMetadata.burnable,
             transferable: baseMetadata.transferable,
@@ -69,6 +71,7 @@ contract EVMAuth is EVMAuthExpiringERC1155 {
         // Combine all metadata into a single structure
         for (uint256 i = 0; i < nextTokenId; i++) {
             result[i] = TokenMetadata({
+                id: baseMetadataArray[i].id,
                 active: baseMetadataArray[i].active,
                 burnable: baseMetadataArray[i].burnable,
                 transferable: baseMetadataArray[i].transferable,
@@ -96,6 +99,7 @@ contract EVMAuth is EVMAuthExpiringERC1155 {
         // Combine all metadata into a single structure
         for (uint256 i = 0; i < ids.length; i++) {
             result[i] = TokenMetadata({
+                id: baseMetadataArray[i].id,
                 active: baseMetadataArray[i].active,
                 burnable: baseMetadataArray[i].burnable,
                 transferable: baseMetadataArray[i].transferable,

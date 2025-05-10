@@ -21,6 +21,7 @@ abstract contract EVMAuthBaseERC1155 is ERC1155, EVMAuthAccessControl, Reentranc
 
     // Data structure for token metadata
     struct BaseMetadata {
+        uint256 id;
         bool active;
         bool burnable;
         bool transferable;
@@ -218,7 +219,7 @@ abstract contract EVMAuthBaseERC1155 is ERC1155, EVMAuthAccessControl, Reentranc
         require(hasRole(TOKEN_MANAGER_ROLE, _msgSender()), "Unauthorized token manager");
         require(id <= nextTokenId, "Invalid token ID");
 
-        _metadata[id] = BaseMetadata(_active, _burnable, _transferable);
+        _metadata[id] = BaseMetadata(id, _active, _burnable, _transferable);
 
         if (id == nextTokenId) {
             nextTokenId++;
