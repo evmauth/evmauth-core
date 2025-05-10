@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🤔 Questions & Discussions
+    url: https://github.com/evmauth/evmauth-core/discussions
+    about: Please ask questions and discuss ideas here
+  - name: 📖 Documentation
+    url: https://evmauth.github.io/evmauth-core
+    about: Check our documentation before reporting issues
+  - name: 💬 Community Chat
+    url: https://discord.radiustech.xyz/
+    about: Join our community for quick questions and discussions

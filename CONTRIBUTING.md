@@ -5,6 +5,7 @@ Thank you for your interest in contributing to EVMAuth! This document provides g
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
+- [Reporting Issues](#reporting-issues)
 - [Development Workflow](#development-workflow)
 - [Commit Messages](#commit-messages)
 - [Pull Requests](#pull-requests)
@@ -16,6 +17,18 @@ Thank you for your interest in contributing to EVMAuth! This document provides g
 This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By
 participating, you are expected to uphold this code. Please report unacceptable behavior to:
 [opensource@radiustech.xyz](mailto:opensource@radiustech.xyz).
+
+## Reporting Issues
+
+We use GitHub issues to track bugs, feature requests, and documentation improvements.
+
+Please use our issue templates when creating a new issue:
+
+- **Bug Report**: Use this template for reporting bugs or unexpected behavior
+- **Feature Request**: Use this template for suggesting new features or enhancements
+- **Documentation**: Use this template for reporting issues with documentation
+
+These structured templates help us gather the information we need to address your issue efficiently.
 
 ## Development Workflow
 
@@ -48,6 +61,18 @@ Types:
 - `chore:` Build process updates
 
 ## Pull Requests
+
+We have specialized templates for different types of contributions. When creating a pull request, choose the template that best fits your contribution:
+
+- **Default Template**: For general changes
+- **Feature Template**: For adding new features
+- **Bugfix Template**: For bug fixes
+- **Documentation Template**: For documentation updates
+
+You can select a specific template by adding `?template=template_name.md` to your PR creation URL. For example:
+`https://github.com/radiustech/evmauth-core/compare/main...your-branch?template=feature.md`
+
+All pull requests should include:
 
 1. Clear title following conventional commits
 2. Detailed description of changes

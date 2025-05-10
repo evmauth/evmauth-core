@@ -1,0 +1,122 @@
+name: 🐞 Bug Report
+description: File a bug report to help us improve
+title: "[BUG]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! The more information you provide, the better we can help you.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please make sure you've completed the following steps before submitting an issue
+      options:
+        - label: I have searched existing issues to make sure this bug has not already been reported
+          required: true
+        - label: I am using the latest version of the project
+          required: true
+        - label: I have read the [documentation](https://github.com/evmauth/evmauth-core/blob/main/README.md)
+          required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: A clear and concise description of what the bug is.
+      placeholder: When I do X, Y happens instead of Z.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I expected Z to happen when I did X.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - Latest Release
+        - Main Branch (Development)
+        - Previous Release
+        - Other (please specify in "Additional Context")
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where does this issue occur?
+      options:
+        - Development
+        - Production
+        - Testing
+        - Other (please specify in "Additional Context")
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browsers Affected
+      description: Which browsers are you seeing the problem on? (if applicable)
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+        - Not Applicable
+
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Information
+      description: Please provide information about your environment
+      value: |
+        - OS: [e.g., Windows 11, macOS 12.6, Ubuntu 22.04]
+        - Node Version: [if applicable]
+        - Package Manager: [e.g., npm 8.19.2, yarn 1.22.19]
+        - Browser: [if applicable, e.g., Chrome 106.0.5249.119]
+        - Device: [e.g., iPhone 13, Desktop with Windows]
+      render: markdown
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code.
+      render: shell
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Add any other context about the problem here. 
+        You can also attach screenshots by dragging & dropping images into this field.
