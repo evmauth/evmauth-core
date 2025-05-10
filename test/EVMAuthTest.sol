@@ -214,6 +214,30 @@ contract EVMAuthTest is Test {
         assertEq(token.ttlOf(TOKEN_ID_0), 7200);
     }
 
+    // Test getting metadata
+    function test_GetMetadata() public {
+        // Grant tokenManager the FINANCE_MANAGER_ROLE role
+        vm.startPrank(owner);
+        token.grantRole(FINANCE_MANAGER_ROLE, tokenManager);
+        vm.stopPrank();
+
+        // Set metadata as token manager
+        vm.startPrank(tokenManager);
+        token.setMetadata(TOKEN_ID_0, true, true, true, 100, 3600);
+        vm.stopPrank();
+
+        // Get metadata
+        EVMAuth.TokenMetadata memory metadata = token.metadataOf(TOKEN_ID_0);
+
+        // Check metadata properties
+        assertEq(metadata.id, TOKEN_ID_0);
+        assertTrue(metadata.active);
+        assertTrue(metadata.burnable);
+        assertTrue(metadata.transferable);
+        assertEq(metadata.price, 100);
+        assertEq(metadata.ttl, 3600);
+    }
+
     // Test token issuing
     function test_IssueToken() public {
         // Set up token metadata first
