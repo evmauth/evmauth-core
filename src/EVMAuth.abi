@@ -815,6 +815,11 @@
         "internalType": "struct EVMAuth.TokenMetadata",
         "components": [
           {
+            "name": "id",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
             "name": "active",
             "type": "bool",
             "internalType": "bool"
@@ -854,6 +859,11 @@
         "type": "tuple[]",
         "internalType": "struct EVMAuth.TokenMetadata[]",
         "components": [
+          {
+            "name": "id",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
           {
             "name": "active",
             "type": "bool",
@@ -900,6 +910,11 @@
         "type": "tuple[]",
         "internalType": "struct EVMAuth.TokenMetadata[]",
         "components": [
+          {
+            "name": "id",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
           {
             "name": "active",
             "type": "bool",
@@ -1735,6 +1750,11 @@
         "internalType": "struct EVMAuth.TokenMetadata",
         "components": [
           {
+            "name": "id",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
             "name": "active",
             "type": "bool",
             "internalType": "bool"
@@ -1781,6 +1801,11 @@
         "internalType": "struct EVMAuth.TokenMetadata",
         "components": [
           {
+            "name": "id",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
             "name": "active",
             "type": "bool",
             "internalType": "bool"
@@ -1813,6 +1838,11 @@
         "indexed": false,
         "internalType": "struct EVMAuth.TokenMetadata",
         "components": [
+          {
+            "name": "id",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
           {
             "name": "active",
             "type": "bool",
