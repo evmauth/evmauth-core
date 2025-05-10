@@ -20,6 +20,10 @@ on:
 env:
   FOUNDRY_PROFILE: ci
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   check:
     name: Run Tests
