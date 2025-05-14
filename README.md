@@ -3,7 +3,7 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/evmauth/evmauth-core/test.yml?label=Tests)
 ![GitHub Repo stars](https://img.shields.io/github/stars/evmauth/evmauth-core)
 
-An advanced implementation of the [ERC-1155] token standard that enables robust EVM-based authorization.
+An open protocol to enable secure authorization in a simple, standard way for Web3 apps, APIs, and AI agents.
 
 [Learn more about EVMAuth](https://evmauth.github.io/)
 
