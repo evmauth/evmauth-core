@@ -3,7 +3,10 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/evmauth/evmauth-core/test.yml?label=Tests)
 ![GitHub Repo stars](https://img.shields.io/github/stars/evmauth/evmauth-core)
 
-An open protocol to enable secure authorization in a simple, standard way for Web3 apps, APIs, and AI agents.
+An open protocol to enable secure authorization in a simple, standard way for applications, APIs, and AI agents.
+
+EVMAuth extends the [ERC-1155] standard to provide simple, EVM-based authorization state management, eliminating the
+need for entire categories of ubiquitous software systems to be built, operated, and maintained.
 
 [Learn more about EVMAuth](https://evmauth.github.io/)
 
