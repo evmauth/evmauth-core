@@ -24,6 +24,8 @@ curl -L https://foundry.paradigm.xyz | bash
 cp .env.example .env
 ```
 
+3. Create a Radius testnet RPC URL (if deploying to Radius): https://docs.radiustech.xyz/radius-testnet-access
+
 ### Deploy Contract
 
 1. Load environment variables:
@@ -135,8 +137,7 @@ cast send --rpc-url "$RPC_URL" \
   "$ACCOUNT_ADDRESS" \
   "$TOKEN_ID" \
   "$TOKEN_AMOUNT" \
-  --value "$PAYMENT_AMOUNT" \
-  --gas-limit 150000
+  --value "$PAYMENT_AMOUNT"
 ```
 
 3. Check balance:
