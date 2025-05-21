@@ -31,6 +31,23 @@ cp .env.example .env
 source .env
 ```
 
+2. Deploy EVMAuth contract:
+```sh
+forge script script/DeployEVMAuth.s.sol:DeployEVMAuth --rpc-url "$RPC_URL" --broadcast
+```
+
+### Deploy Contract with Deterministic Address
+
+> ⚠️ **IMPORTANT:** Set the `APP_NAME` and `APP_VERSION` in the `.env` file to something unique.
+>
+> If you attempt to deploy the contract with the same name and version as an existing contract, it will fail because
+> the deployment script uses the [ERC-2470] Singleton Factory, for deterministic addresses.
+
+1. Load environment variables:
+```sh
+source .env
+```
+
 2. Verify [ERC-2470] Singleton Factory is deployed on the target network:
 ```sh
 cast code 0xce0042B868300000d44A59004Da54A005ffdcf9f --rpc-url="$RPC_URL"
@@ -39,12 +56,12 @@ cast code 0xce0042B868300000d44A59004Da54A005ffdcf9f --rpc-url="$RPC_URL"
 
 3. Predict contract address and project ID:
 ```sh
-forge script script/DeployEVMAuth.s.sol:DeployEVMAuth --sig "predictAddress()" --rpc-url "$RPC_URL"
+forge script script/DeployEVMAuthViaERC2470.s.sol:DeployEVMAuth --sig "predictAddress()" --rpc-url "$RPC_URL"
 ```
 
 4. Deploy EVMAuth contract:
 ```sh
-forge script script/DeployEVMAuth.s.sol:DeployEVMAuth --rpc-url "$RPC_URL" --broadcast
+forge script script/DeployEVMAuthViaERC2470.s.sol:DeployEVMAuth --rpc-url "$RPC_URL" --broadcast
 ```
 
 ### Generate ABI & Bytecode
