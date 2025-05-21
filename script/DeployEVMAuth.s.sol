@@ -28,13 +28,7 @@ contract DeployEVMAuth is Script {
         vm.startBroadcast(deployerPrivateKey);
 
         // Simple direct deployment using the standard CREATE opcode
-        EVMAuth evmAuth = new EVMAuth(
-            NAME,
-            VERSION,
-            URI,
-            DELAY,
-            deployer
-        );
+        EVMAuth evmAuth = new EVMAuth(NAME, VERSION, URI, DELAY, deployer);
 
         address contractAddress = address(evmAuth);
 
