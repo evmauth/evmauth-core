@@ -70,7 +70,7 @@ forge script script/DeployEVMAuthViaERC2470.s.sol:DeployEVMAuth --rpc-url "$RPC_
 
 1. Generate EVMAuth contract ABI:
 ```sh
-forge inspect src/EVMAuth.sol:EVMAuth abi > src/EVMAuth.abi
+forge inspect src/EVMAuth.sol:EVMAuth abi --json > src/EVMAuth.abi
 ```
 
 2. Generate EVMAuth contract bytecode:
